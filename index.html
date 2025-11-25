@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloverOS Wiki</title>
+    <style>
+        /* Dark mode base */
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #4b8cff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #4b8cff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: #4b8cff33;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #4b8cff;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        code {
+            background-color: #222;
+            color: #ffcc00;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        pre {
+            background-color: #222;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1a1a1a;
+            border-top: 2px solid #4b8cff;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CloverOS Wiki</h1>
+        <p>The CC:Tweaked Operating System by PalorderSoftworksOfficial</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#installation">Installation</a>
+        <a href="#contributing">Contributing</a>
+        <a href="#credits">Credits</a>
+        <a href="#notes">Final Notes</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About CloverOS</h2>
+            <p>CloverOS is a custom Minecraft operating system designed for the <strong>CC:Tweaked</strong> mod and <strong>CraftOS</strong>.  
+            It draws inspiration from Minux and Windows 10/11, combining the lightweight structure of Minux with a modern and user-friendly design inspired by Windows.</p>
+            <p>CloverOS is a complete rewrite built to feel like a desktop environment inside Minecraft. Originally based on Minux concepts, it has since been redesigned and reimplemented independently.</p>
+            <p><em>Note:</em> Previous issues with the file scraper while examining Minux have been resolved.</p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Windows-style interface and experience</li>
+                <li>Lightweight and optimized for in-game performance</li>
+                <li>Fully compatible with CC:Tweaked and CraftOS</li>
+                <li>Modular design allowing easy expansion and updates</li>
+                <li>Open for community feedback and contributions</li>
+            </ul>
+        </section>
+
+        <section id="installation">
+            <h2>Installation</h2>
+            <p>To install CloverOS, open an Advanced Computer (or CraftOS terminal) in Minecraft and enter the following command:</p>
+            <pre><code>wget run https://palordersoftworksofficial.github.io/CloverOS/netinstall.lua</code></pre>
+            <p>The installer will automatically download and set up CloverOS.  
+            You need to modify some configurations:</p>
+            <ol>
+                <li>In your Minecraft world, open the Mods menu and select <strong>CC:Tweaked</strong>, then click <strong>Config</strong>.</li>
+                <li>Select the file sorted in the Server Configurations and click <strong>Modify</strong>.</li>
+                <li>Set <strong>Computer Space Limit</strong> to <code>1073741824</code> exactly.</li>
+                <li>Do the same for <strong>Floppy Space Limit</strong>.</li>
+                <li>In the Turtle folder, click <strong>ON</strong> for <strong>Need Fuel</strong>.</li>
+            </ol>
+            <p>These instructions are only for CC:Tweaked and will be improved in the upcoming wiki.</p>
+        </section>
+
+        <section id="contributing">
+            <h2>Contributing</h2>
+            <p>Contributions are welcome and encouraged! To help improve CloverOS:</p>
+            <ol>
+                <li>Fork the repository.</li>
+                <li>Make your changes or improvements.</li>
+                <li>Submit a pull request for review.</li>
+            </ol>
+            <p>If you enjoy using CloverOS, consider giving the project a star to show your support.</p>
+        </section>
+
+        <section id="credits">
+            <h2>Credits and Inspiration</h2>
+            <ul>
+                <li>Inspired by: Minux, Windows 10/11</li>
+                <li>Developed by: PalorderSoftworksOfficial, Comso, and perplexed (more contributors to be announced later)</li>
+            </ul>
+        </section>
+
+        <section id="notes">
+            <h2>Final Notes</h2>
+            <p>CloverOS is an ongoing project and continues to evolve with new updates, improvements, and features.  
+            If you encounter any bugs, have suggestions, or want to share feedback, please open an issue on GitHub.</p>
+            <p>Thank you for using CloverOS. <em>Meow :3</em></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 CloverOS Project | PalorderSoftworksOfficial
+    </footer>
+</body>
+</html>
